@@ -1,0 +1,8 @@
+ultralytics
+torch
+torchvision
+kagglehub
+pandas
+matplotlib
+Pillow
+PyYAML
