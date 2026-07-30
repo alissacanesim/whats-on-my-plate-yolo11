@@ -4,15 +4,45 @@ YOLO11-based food component detection system that identifies 10 visible food cat
 
 ## Project Overview
 
-This project uses YOLO11 object detection to identify visible food components in meal images.
+This project uses object detection to identify visible food components in complete meal images. The system returns bounding boxes, class labels, and confidence scores for each detected component.
+
+## Dataset
+
+**Source:** [Food Recognition 2022 — Kaggle](https://www.kaggle.com/datasets/sainikhileshreddy/food-recognition-2022)
+
+The original dataset contained 85 food categories. These categories were mapped into 10 broader food component classes.
+
+**Final dataset size:** 4,183 images
+
+- Train: 2,928 images
+- Validation: 836 images
+- Test: 419 images
+
+The original bounding boxes were unreliable, so new bounding boxes were calculated from the segmentation polygons. Invalid annotations, selected multi-polygon cases, and duplicate labels were also removed.
 
 ## Classes
 
-bread, rice, potato, egg, cheese, tomato, carrot, cucumber, salad, fruit
+- bread
+- rice
+- potato
+- egg
+- cheese
+- tomato
+- carrot
+- cucumber
+- salad
+- fruit
 
 ## Model
 
-YOLO11n pretrained model fine-tuned on a custom food component dataset.
+A pretrained YOLO11n model was fine-tuned through transfer learning using Ultralytics and PyTorch.
+
+**Training configuration:**
+
+- Image size: 640 × 640
+- Epochs: 50
+- Batch size: 16
+- Hardware: NVIDIA Tesla T4
 
 ## Results
 
@@ -23,7 +53,9 @@ YOLO11n pretrained model fine-tuned on a custom food component dataset.
 
 ## Repository Structure
 
-- `notebooks/` — project notebook
-- `results/` — metrics, predictions, plots, and model outputs
-- `presentation/` — final presentation
-- `demo/` — demo video link
+- `notebooks/` — complete project notebook
+- `demo/` — notebook used to demonstrate model inference
+- `results/` — metrics, predictions, training plots, and model weights
+- `presentation/` — final project presentation
+- `requirements.txt` — required Python packages
+- `AI_USAGE_LOG.md` — description of AI assistance used during the project
