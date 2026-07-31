@@ -8,7 +8,7 @@ This project uses object detection to identify visible food components in comple
 
 ## Dataset
 
-**Source:** [Food Recognition 2022 — Kaggle](https://www.kaggle.com/datasets/sainikhileshreddy/food-recognition-2022)
+**Source:** Food Recognition 2022 — Kaggle
 
 The original dataset contained 85 food categories. These categories were mapped into 10 broader food component classes.
 
@@ -37,7 +37,7 @@ The original bounding boxes were unreliable, so new bounding boxes were calculat
 
 A pretrained YOLO11n model was fine-tuned through transfer learning using Ultralytics and PyTorch.
 
-**Training configuration:**
+### Training Configuration
 
 - Image size: 640 × 640
 - Epochs: 50
@@ -50,6 +50,14 @@ A pretrained YOLO11n model was fine-tuned through transfer learning using Ultral
 - Recall: 0.610
 - mAP50: 0.674
 - mAP50-95: 0.478
+
+## Demo Video
+
+## Demo Video
+
+Watch the model demo here: [Demo Video](https://houcomcol-my.sharepoint.com/:v:/g/personal/w214778105_student_hccs_edu/IQCkhF-sxjwHSq_sgVdZDPYKAXqOfnLFsVWumfRYWZnvVIo?e=b4VcIc&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+
+The demo notebook is also available in the `demo/` folder.
 
 ## Repository Structure
 
