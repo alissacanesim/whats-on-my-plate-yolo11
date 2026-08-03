@@ -1,4 +1,5 @@
 # What's on My Plate? — YOLO11
+
 **Created by Alissa Canesim Bento**
 
 YOLO11-based food component detection system that identifies 10 visible food categories in meal images.
@@ -54,8 +55,6 @@ A pretrained YOLO11n model was fine-tuned through transfer learning using Ultral
 
 ## Demo Video
 
-## Demo Video
-
 Watch the model demo here: [Demo Video](https://houcomcol-my.sharepoint.com/:v:/g/personal/w214778105_student_hccs_edu/IQCkhF-sxjwHSq_sgVdZDPYKAXqOfnLFsVWumfRYWZnvVIo?e=b4VcIc&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
 The demo notebook is also available in the `demo/` folder.
@@ -67,4 +66,4 @@ The demo notebook is also available in the `demo/` folder.
 - `results/` — metrics, predictions, training plots, and model weights
 - `presentation/` — final project presentation
 - `requirements.txt` — required Python packages
-- `AI_USAGE_LOG.md` — description of AI assistance used during the project
+- `docs/AI_usage_log.md` — record of AI assistance used during the project
