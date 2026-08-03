@@ -1,4 +1,5 @@
 # What's on My Plate? — YOLO11
+**Created by Alissa Canesim Bento**
 
 YOLO11-based food component detection system that identifies 10 visible food categories in meal images.
 
